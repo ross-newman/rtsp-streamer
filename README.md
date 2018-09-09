@@ -1,5 +1,5 @@
 # rtsp-streamer
-This is a simple RTSP (RFC) streaming demo using gstreamer on the Nvidia TX2 jetson.
+This is a simple RTSP (RFC 2623) streaming demo using gstreamer on the Nvidia TX2 jetson.
 
 # Setup
 To install gstreamer install the following packages (quick setup some packages may not be required):
@@ -8,14 +8,15 @@ sudo apt-get install gstreamer1.0-tools libgstreamer1.0-dev libgstrtspserver-1.0
 ```
 # Building
 ```
-make rtsp-streamer
+make
+./rtsp-stream # Execute binary
 ```
 # Testing
 To start RTSP streaming using the gstramer lanuch tool these pipelines can be used for testing
-## gstreamer
+## Gstreamer
 ```
 # Most basic video pipeline (non streaming)
-gst-launch-1.0 videotestsrc ! video/x-raw,width=640,height=480,framerate=25/1 ! xvimagesink
+gst-launch-1.0 videotestsrc is-live=1 horizontal-speed=1 ! video/x-raw,width=640,height=480,framerate=25/1 ! xvimagesink
 
 ```
 ## VLC
