@@ -4,7 +4,7 @@ This is a simple RTSP (RFC 2623) streaming demo using gstreamer on the Nvidia TX
 # Setup
 To install gstreamer install the following packages (quick setup some packages may not be required):
 ```
-sudo apt-get install gstreamer1.0-tools libgstreamer1.0-dev libgstrtspserver-1.0 libgstrtspserver-1.0-dev libglib2.0-dev vlc
+sudo apt-get install gstreamer1.0-tools gstreamer1.0-plugins-bad libgstreamer1.0-dev libgstrtspserver-1.0 libgstrtspserver-1.0-dev libglib2.0-dev vlc
 ```
 # Building
 ```
