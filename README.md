@@ -34,7 +34,7 @@ When starting the server now and directing an RTP client to the URL (like with v
 ```
 rtsp://localhost:8554/test
 ```
-You can initiate VLC with adummy interface using:
+You can initiate VLC with a dummy interface using the command below. Issues using VLC on TX2.
 ```
 cvlc rtsp://127.0.0.1:8554/test
-'''
+````
